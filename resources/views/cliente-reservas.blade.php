@@ -1,7 +1,5 @@
 @extends('layouts.teste', ['current' => 'reservas'])
 
-
-
 @section('body')
     @foreach ($cliente_reservas as $reserva)
         <h1>Reservas feitas por: {{ $reserva->nome }} </h1>

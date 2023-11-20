@@ -56,7 +56,7 @@
                     <div class="m-5 border p-5 rounded-2" style="width: 40vw">
 
                         <h5 style="text-align:center;margin: 30px 0px;">Escolha uma data para saber quis reservas foram feitas para ela.</h5>
-                        {{ Form::open(['url' => '/reservas-periodo', 'method' => 'POST']) }}
+                        {{ Form::open(['url' => '/reservas-data', 'method' => 'POST']) }}
                         @csrf
                         {{ Form::label('cliente_id', 'Checkin: ') }}
                         {!! Form::date('data_indicada', null, ['class' => 'form-control mb-3']) !!}

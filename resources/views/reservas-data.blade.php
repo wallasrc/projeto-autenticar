@@ -1,13 +1,9 @@
 @extends('layouts.teste', ['current' => 'reservas'])
 
-
-
 @section('body')
     <hr>
     <br>
     <br>
-
-
     @foreach ($reservas as $reserva)
         <p><strong>Código da reserva: {{ $reserva->id }}</strong></p>
 

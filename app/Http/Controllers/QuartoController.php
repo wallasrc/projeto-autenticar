@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\Cache;
 class QuartoController extends Controller
 {
 
-    //Protegendo rotas utilizando o middleware de pelido auth direto no __construct. 
-    //Todas as rotas do Controller passarão por autenticação.
+    /* Protegendo rotas utilizando o middleware de pelido auth direto no __construct. 
+    Todas as rotas do Controller passarão por autenticação.*/
     public function __construct()
     {
         $this->middleware('auth');

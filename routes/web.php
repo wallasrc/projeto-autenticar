@@ -21,7 +21,7 @@ Route::get('/quartos-disponiveis', [QuartoController::class, 'listarDiponiveis']
 Route::post('/reservas', [App\Http\Controllers\ReservaController::class, 'listaReservas'])->name('reservas');
 
 //redireciona para o método listaReservasPeriodo em ReservaController
-Route::post('/reservas-periodo', [App\Http\Controllers\ReservaController::class, 'listaReservasPeriodo']);
+Route::post('/reservas-data', [App\Http\Controllers\ReservaController::class, 'listaReservasData']);
 
 
 //redireciona para o método index em ClienteController

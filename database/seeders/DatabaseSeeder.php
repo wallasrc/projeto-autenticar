@@ -14,8 +14,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        $this->call(ClienteSeeder::class);
-        $this->call(QuartoSeeder::class);
-        $this->call(ReservaSeeder::class);
+        $this->call([
+            ClienteSeeder::class,
+            QuartoSeeder::class,
+            ReservaSeeder::class
+        ]);
     }
 }

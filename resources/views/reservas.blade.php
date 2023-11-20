@@ -1,7 +1,5 @@
 @extends('layouts.teste', ['current' => 'reservas'])
 
-
-
 @section('body')
         <h1>Reservas feitas por: {{ $cliente }} </h1>
         <br>

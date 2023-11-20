@@ -15,13 +15,13 @@ class ClienteSeeder extends Seeder
     public function run()
     {
         //inserindo dados no db com os seeders
-        DB::table('clientes')->insert(['nome'=>'joão', 'email'=>'emdvadfdreihl@mail.com','telefone'=>1111123]);
-        DB::table('clientes')->insert(['nome'=>'maria', 'email'=>'emdvadfdfhdreil@mail.com','telefone'=>1111123]);
-        DB::table('clientes')->insert(['nome'=>'eline', 'email'=>'emdhvasddfdreil@mail.com','telefone'=>1111123]);
-        DB::table('clientes')->insert(['nome'=>'joão', 'email'=>'emdvadfdhsfdreil@mail.com','telefone'=>1111123]);
-        DB::table('clientes')->insert(['nome'=>'joão', 'email'=>'emdvaddsfhhdreil@mail.com','telefone'=>1111123]);
-        DB::table('clientes')->insert(['nome'=>'joão', 'email'=>'emdvaddshffdreil@mail.com','telefone'=>1111123]);
-        DB::table('clientes')->insert(['nome'=>'joão', 'email'=>'emdvadfdsffdsghdreil@mail.com','telefone'=>1111123]);
+        DB::table('clientes')->insert(['nome'=>'João', 'email'=>'emdvadfdreihl@mail.com','telefone'=>1111123]);
+        DB::table('clientes')->insert(['nome'=>'Maria', 'email'=>'emdvadfdfhdreil@mail.com','telefone'=>1111123]);
+        DB::table('clientes')->insert(['nome'=>'Eline', 'email'=>'emdhvasddfdreil@mail.com','telefone'=>1111123]);
+        DB::table('clientes')->insert(['nome'=>'Ana', 'email'=>'emdvadfdhsfdreil@mail.com','telefone'=>1111123]);
+        DB::table('clientes')->insert(['nome'=>'Julia', 'email'=>'emdvaddsfhhdreil@mail.com','telefone'=>1111123]);
+        DB::table('clientes')->insert(['nome'=>'Aline', 'email'=>'emdvaddshffdreil@mail.com','telefone'=>1111123]);
+        DB::table('clientes')->insert(['nome'=>'ilma', 'email'=>'emdvadfdsffdsghdreil@mail.com','telefone'=>1111123]);
         
     }
 }

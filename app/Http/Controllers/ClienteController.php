@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class ClienteController extends Controller
 {
-    //Protegendo rotas utilizando o middleware de pelido auth direto no __construct. 
-    //Todas as rotas do Controller passarão por autenticação.
+    /*  Protegendo rotas utilizando o middleware de pelido auth direto no __construct. 
+    Todas as rotas do Controller passarão por autenticação.*/
     public function __construct()
     {
         $this->middleware('auth');
@@ -22,7 +22,7 @@ class ClienteController extends Controller
         $reservasDB = new Cliente(); //Cria instância de Cliente
 
         //Guarda o retorno da função listaReservas em cliente_reservas
-        $cliente_reservas =  $reservasDB->listaReservas($cliente_id); 
+        $cliente_reservas =  $reservasDB->listaReservas($cliente_id);
 
         //Redirecoina para a view cliente-reservas passando a variável cliente_reservas.
         return view('cliente-reservas', compact('cliente_reservas'));

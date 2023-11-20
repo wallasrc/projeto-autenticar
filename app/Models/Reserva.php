@@ -11,15 +11,14 @@ use Illuminate\Support\Facades\DB;
 class Reserva extends Model
 {
     use HasFactory;
-    
-    public function listaReservas(int $cliente_id)
+
+    public function listaReservas($cliente_id)
     {
 
-        //Busca na tabela reservas do db as reservas quando o cliente_id e igual 
-        //ao cliente_id recebido como parametro.
- 
-        $reservas = DB::table('reservas')
-            ->where('cliente_id', $cliente_id)
+        /*  Busca na tabela reservas do db as reservas quando o cliente_id e igual 
+        ao cliente_id recebido como parametro.*/
+
+        $reservas = Reserva::where('cliente_id', $cliente_id)
             ->get();
 
         return $reservas;

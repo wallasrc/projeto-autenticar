@@ -232,7 +232,7 @@ return [
         'Form'      => Illuminate\Html\FormFacade::class,
         'Html'      => Illuminate\Html\HtmlFacade::class,
 
-        // 'Debugbar' => Barryvdh\Debugbar\Facade\Debugbar::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade\Debugbar::class,
 
     ],
 
